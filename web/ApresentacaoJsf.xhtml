@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title>Titulo</title>
+    </h:head>
+    <h:body>
+        <p:layout id="painelPadrao" style="min-height: 800px; min-width: 300px;">
+            <p:layoutUnit position="center" id="Centro">
+                <p:panelGrid>
+                    <p:row style="height: 300px;">
+                        <f:facet name="body">
+                            <h:outputText value="Corpo"/> 
+                        </f:facet>
+                    </p:row>
+                    <p:row style="height: 130px;">
+                        <f:facet name="Imagem">
+                             Imagem
+                        </f:facet>
+                    </p:row>
+                    <p:row style="height: 70px;">
+                        <h:form>
+                            <!--<h:commandButton action="" value="Proximo"/>-->     
+                        </h:form>
+                            
+                    </p:row>
+                </p:panelGrid>
+                
+            </p:layoutUnit>
+            
+                
+        </p:layout>
+    </h:body>
+</html>
+
