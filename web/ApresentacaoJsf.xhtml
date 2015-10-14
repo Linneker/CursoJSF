@@ -9,31 +9,38 @@
         <title>Titulo</title>
     </h:head>
     <h:body>
-        <p:layout id="painelPadrao" style="min-height: 800px; min-width: 300px;">
-            <p:layoutUnit position="center" id="Centro">
-                <p:panelGrid>
-                    <p:row style="height: 300px;">
-                        <f:facet name="body">
+            <p:layout id="texto" style="border-radius:6pt; border:black 3px solid; top: 12px; min-height: 300px; min-width: 300px;">
+                <p:layoutUnit position="center" id="Centro">
+                            <h:outputText value="TEXTO"/>
+                      
+<!--                    <p:panelGrid columns="1" style="border:black 3px solid; min-height: 100%; min-width: 100%; width: 100%">
+                        <p:row style="height: 70%">
                             <h:outputText value="Corpo"/> 
-                        </f:facet>
-                    </p:row>
-                    <p:row style="height: 130px;">
-                        <f:facet name="Imagem">
-                             Imagem
-                        </f:facet>
-                    </p:row>
-                    <p:row style="height: 70px;">
-                        <h:form>
-                            <!--<h:commandButton action="" value="Proximo"/>-->     
-                        </h:form>
-                            
-                    </p:row>
-                </p:panelGrid>
-                
+                        </p:row>
+                        <p:row style="height: 20%">
+                            <f:facet name="Imagem">
+                                Imagem
+                            </f:facet>
+                        </p:row>
+                        <p:row style="height: 10%">
+                            <h:form>
+                                    <h:commandButton value="Proximo"/>     
+                            </h:form>
+                        </p:row>
+                    </p:panelGrid>-->
+                </p:layoutUnit>
+            </p:layout>
+        <p:layout id='imagem' style="border-radius:6pt; border:black 1px solid; top:15px; min-height: 200px; min-width: 300px;">
+            <p:layoutUnit position="center" id="Centro">
+                            <h:outputText value="Imagem"/>
             </p:layoutUnit>
-            
-                
         </p:layout>
+           <p:layout id='rodape' style="border-radius:6pt; border:black 1px solid; top:15px; min-height: 100px; min-width: 300px;">
+            <p:layoutUnit position="center" id="Centro">
+                            <h:outputText value="rodape"/>
+            </p:layoutUnit>
+        </p:layout>
+ 
     </h:body>
 </html>
 
